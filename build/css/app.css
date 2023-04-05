@@ -370,7 +370,7 @@ p {
 .header__texto {
   line-height: 1.5;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .header__titulo, .header__subtitulo {
     font-size: 3.8rem;
   }
@@ -383,12 +383,17 @@ p {
   }
 }
 
-@media (min-width: 375px) {
+.cuadros {
+  max-width: 400px;
+  margin: auto;
+}
+@media (min-width: 1024px) {
   .cuadros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     align-items: center;
+    max-width: none;
   }
 }
 
